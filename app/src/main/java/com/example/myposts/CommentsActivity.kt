@@ -17,7 +17,7 @@ class CommentsActivity : AppCompatActivity() {
         setContentView(binding.root)
         obtainPostId()
         fetchPostById()
-        setUpToolbar()
+//        setUpToolbar()
     }
     fun obtainPostId(){
         postId = intent.extras?.getInt("POST_ID")?:0
@@ -39,8 +39,9 @@ class CommentsActivity : AppCompatActivity() {
             }
         })
     }
-    fun setUpToolbar(){
-        setSupportActionBar(binding.toolbarComments)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-    }
+//    fun setUpToolbar(){
+//        setSupportActionBar(binding.toolbarComments)
+//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+//
+//    }
 }
